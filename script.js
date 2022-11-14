@@ -1,3 +1,13 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
-document.querySelector("body").appendChild(h2);
+const countButton = document.querySelector('.buttonCount button');
+
+let countNumber = document.querySelector('.actualCount h1');
+
+countButton.addEventListener('click', counting);
+
+function counting()
+{
+  countNumber.innerHTML++;
+}
+
+
+
